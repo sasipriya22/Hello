@@ -1,0 +1,17 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+     Scanner inn = new Scanner(System.in);
+        int x = inn.nextInt();
+        int a = inn.nextInt();
+        int b = inn.nextInt();
+        System.out.println("Number of copies sold:" + x);
+        System.out.println("Cost of each copy:" + a);
+            System.out.println("Cost spent by agency on each newspaper:" + b);
+         float profit = (a - b) * x - 100;
+        System.out.printf("The profit obtained is Rs.%.2f", profit);
+    }
+}
